@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Page Index</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/moncss.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row main">
+                <div class="main-form main-center">
+                    {{form(form)}}
+                    <a href="{{path('show')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Page Show</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

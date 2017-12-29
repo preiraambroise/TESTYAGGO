@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Page Show</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('bundles/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/moncss.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row main">
+                <div class="main-form main-center">
+                    <div class="main-title">
+                        <h3>Personnes:</h3>
+                    </div>
+                    {{form(form)}}
+                    <button class="unselectall"> Deselectionner tout </button>
+                    <button class="select-up"> Selectionner les personnes au dessus </button>
+                    <button class="count"> Compter selection </button>
+                    <p class="count-print"></p>
+                    <a href="{{path('homepage')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Page Index</a>
+                </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="{{ asset("bundles/monjs.js") }}"></script>
+    </body>
+</html>
+

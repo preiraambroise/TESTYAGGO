@@ -1,0 +1,11 @@
+services:
+    deletor:
+        class: AppBundle\Services\DeleteArrayFormRequest
+        arguments: ["@request_stack", "@doctrine.orm.entity_manager"]
+    json_file_builder:
+        class: AppBundle\Services\JsonFileBuilder
+        arguments: ["@request_stack", "@doctrine.orm.entity_manager","@jms_serializer", "fichier.json"]
+    form_list_builder:
+        class: AppBundle\Services\FormListBuilder
+        arguments: ["@request_stack", "@doctrine.orm.entity_manager", "@form.factory"]
+
